@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Omerta Empire Telegram Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <div id="app">
+      <div class="game-container">
+        <header class="game-header">
+          <h1 class="game-title">OMERTA EMPIRE</h1>
+          <div class="player-info">
+            <div class="player-name" id="playerName">Loading...</div>
+            <div class="player-id" id="playerId"></div>
+          </div>
+        </header>
+
+        <main class="game-main">
+          <div class="money-display">
+            <div class="money-label">Your Fortune</div>
+            <div class="money-amount" id="moneyAmount">$0</div>
+          </div>
+
+          <button class="collect-btn" id="collectBtn">
+            <span class="btn-text">COLLECT</span>
+            <span class="btn-value">+$10</span>
+          </button>
+        </main>
+
+        <footer class="game-footer">
+          <div class="footer-text">Build your empire, keep the code of silence</div>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
